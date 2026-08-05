@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    background: #F8F9FA;
-    color: #111827;
+    background:#121212;
+    color:#E5E5E5;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -32,8 +32,8 @@ body {
     align-items: center;
 
     padding: 20px 8%;
-
-    background: #F3F4F6;
+    
+    background:#1E1E1E;
     backdrop-filter: blur(12px);
 
     z-index: 1000;
@@ -44,6 +44,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+	
 }
 
 
@@ -53,7 +54,7 @@ body {
     font-family: "Courier New", monospace;
 }
     font-size: 45px;
-    color: #6B7280;
+    color:#D4AF37;
 }
 
 .logo-img {
@@ -66,7 +67,7 @@ body {
 
     display: flex;
     gap: 30px;
-
+	
     list-style: none;
 
 }
@@ -75,7 +76,7 @@ body {
 .navbar a {
 
     text-decoration: none;
-    color: #4f515e;
+    color:#d4af37;
 
     font-size: 20px;
 
@@ -86,7 +87,7 @@ body {
 
 .navbar a:hover {
 
-    color:#b8863b;
+    color:#8B0000;
 
 }
 
@@ -133,13 +134,16 @@ body {
 }
 
 
-.hero-content h1 {
+.hero-content h1,
+secion h2{
 
     font-family:'Playfair Display',serif;
 
     font-size:70px;
 
     margin-bottom:20px;
+	
+	color:#8B0000;
 
 }
 
@@ -149,6 +153,8 @@ body {
     font-size:22px;
 
     margin-bottom:35px;
+	
+	color:#D4AF37;
 
 }
 
@@ -161,9 +167,9 @@ body {
 
     padding:15px 35px;
 
-    background:#111827;
-
-    color:#E5E7EB;
+    background:#C62828;
+	
+    color:#d4af37;
 
     text-decoration:none;
 
@@ -176,7 +182,7 @@ body {
 
 .btn:hover {
 
-    background:#E5E7EB;
+    background:#8B0000;
 
     transform:translateY(-4px);
 
@@ -200,7 +206,7 @@ section h2 {
 
     font-size:42px;
 
-    color:#1F2937;
+    color:#d4af37;
 
     margin-bottom:35px;
 
@@ -224,8 +230,8 @@ section h2 {
 
     line-height:1.8;
 
-    color:#6B7280;
-
+    color:#8B0000;
+ 
 }
 
 
@@ -288,6 +294,8 @@ section h2 {
 .contact {
 
     text-align:center;
+	color:#d4af37;
+
 
 }
 
@@ -307,8 +315,7 @@ section h2 {
 
     padding:12px 25px;
 
-    background:#6f4e37;
-
+     background:#B22222;
     color:white;
 
     text-decoration:none;
@@ -318,14 +325,18 @@ section h2 {
 }
 
 
+.social a:hover{
+    background:#8B0000;
+}
+
+
 
 /* Footer */
 
 footer {
 
-    background:#2b2b2b;
-
-    color:white;
+    background:#0F0F0F;
+    color:#E5E5E5;
 
     text-align:center;
 
@@ -420,6 +431,8 @@ flex-direction:column;
 
 align-items:center;
 
+color:#D4AF37;
+
 justify-content:center;
 
 background:
@@ -434,8 +447,6 @@ url("../images/mardin.png");
 background-size:cover;
 
 background-position:center;
-
-color:white;
 
 text-align:center;
 
@@ -484,7 +495,7 @@ border:none;
 
 background:#374151;
 
-color:white;
+color:#d4af37;
 
 padding:12px 25px;
 
@@ -526,7 +537,7 @@ gap:25px;
 .product {
 
 
-background:white;
+background:#8B0000;
 
 padding:30px;
 
