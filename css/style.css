@@ -1,0 +1,614 @@
+/* Genel Ayarlar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F8F9FA;
+    color: #111827;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #F3F4F6;
+    backdrop-filter: blur(12px);
+
+    z-index: 1000;
+
+}
+
+.logo-alan {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo {
+
+    body {
+    font-family: "Courier New", monospace;
+}
+    font-size: 45px;
+    color: #6B7280;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+
+.navbar ul {
+
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+
+}
+
+
+.navbar a {
+
+    text-decoration: none;
+    color: #4f515e;
+
+    font-size: 20px;
+
+    transition: .3s;
+
+}
+
+
+.navbar a:hover {
+
+    color:#b8863b;
+
+}
+
+
+/* Hero */
+
+.hero {
+
+    height: 90vh;
+
+    background:
+    url("../images/askeri1.jpg")
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+}
+
+
+.overlay {
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,.45);
+
+}
+
+
+.hero-content {
+
+    position:relative;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+.hero-content h1 {
+
+    font-family:'Playfair Display',serif;
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero-content p {
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+
+/* Buton */
+
+.btn {
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#111827;
+
+    color:#E5E7EB;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover {
+
+    background:#E5E7EB;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* Genel Section */
+
+section {
+
+    padding:90px 8%;
+
+}
+
+
+section h2 {
+
+    text-align:center;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:42px;
+
+    color:#1F2937;
+
+    margin-bottom:35px;
+
+}
+
+
+/* Hakkımızda */
+
+.about {
+
+    text-align:center;
+
+}
+
+
+.about p {
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#6B7280;
+
+}
+
+
+
+/* Galeri */
+
+.gallery-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.gallery-grid img {
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+
+.gallery-grid img:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* Harita */
+
+.location iframe {
+
+    width:100%;
+
+    height:400px;
+
+    border:0;
+
+    border-radius:25px;
+
+}
+
+
+
+/* İletişim */
+
+.contact {
+
+    text-align:center;
+
+}
+
+
+.social {
+
+    margin-top:20px;
+
+}
+
+
+.social a {
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:12px 25px;
+
+    background:#6f4e37;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background:#2b2b2b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+	
+	margin-top: 50px;
+
+}
+
+
+
+/* Mobil Tasarım */
+
+@media(max-width:768px){
+
+
+.navbar {
+
+    padding:18px 5%;
+
+}
+
+
+.logo {
+
+    font-size:22px;
+
+}
+
+
+.navbar ul {
+
+    display:none;
+
+}
+
+
+.hero-content h1 {
+
+    font-size:45px;
+
+}
+
+
+.hero-content p {
+
+    font-size:17px;
+
+}
+
+
+section {
+
+    padding:60px 5%;
+
+}
+
+
+section h2 {
+
+    font-size:32px;
+
+}
+
+
+.gallery-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.gallery-grid img {
+
+    height:250px;
+
+}
+
+
+}
+
+/* Menü Sayfası */
+
+
+.menu-header {
+
+height:80vh;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+
+url("../images/mardin.png");
+
+background-size:cover;
+
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+.menu-header h1 {
+
+font-family:'Playfair Display',serif;
+
+font-size:85px;
+
+}
+
+
+
+.menu-header p {
+
+font-size:20px;
+
+}
+
+
+
+
+.categories {
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+
+
+.categories button {
+
+
+border:none;
+
+background:#374151;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+
+
+}
+
+
+.categories button:hover {
+
+background:#111827;
+
+}
+
+
+
+
+.menu-grid {
+
+
+display:grid;
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+gap:25px;
+
+
+}
+
+
+
+.product {
+
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.08);
+
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.product:hover {
+
+
+transform:translateY(-8px);
+
+
+}
+
+
+
+.product h3 {
+
+
+font-size:18px;
+
+font-weight:500;
+
+
+}
+
+
+
+.product span {
+
+
+color:#b8863b;
+
+font-weight:600;
+
+font-size:20px;
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.menu-grid {
+
+grid-template-columns:1fr;
+
+}
+
+
+.menu-header h1 {
+
+font-size:40px;
+
+}
+
+
+.product {
+
+padding:25px;
+
+}
+
+
+}
