@@ -50,9 +50,7 @@ body {
 
 .logo {
 
-    body {
     font-family: "Courier New", monospace;
-}
     font-size: 45px;
     color:#D4AF37;
 }
@@ -363,8 +361,12 @@ footer {
 .logo {
 
     font-size:22px;
+	margin-top: 15px;
 
 }
+
+
+
 
 
 .navbar ul {
@@ -493,7 +495,7 @@ margin-bottom:40px;
 
 border:none;
 
-background:#374151;
+background:#8b0000;
 
 color:#d4af37;
 
